@@ -5,11 +5,12 @@ Create different folders in the appdata folder containing the songs you want, fo
 ```
 Appdata/
 └── Local/
-    ├── mashups/
-    │   └── 661012.mp3
-    ├── other/
-    │   └── 661012.mp3
-    └── 661012.mp3
+    └── GeometryDash/
+        ├── mashups/
+        │   └── 661012.mp3
+        ├── whatever/
+        │   └── 661012.mp3
+        └── 661012.mp3
 ```
 You can select between all your folders<br>
 To access the menu / buttons use the "more" button in the song wiget

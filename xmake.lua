@@ -39,12 +39,13 @@ includes("**/xmake.lua") -- recursively add files through pattern matching
 target("gdmod") --dll name and target name
 	set_default(true)
 	set_kind("shared")
+	set_warnings("none")
 	add_files("src/*.cpp")
 	add_packages("fmt")
 	add_deps("cocos-headers")
 	add_deps("mat-dash")
 	add_deps("gd.h")
-	set_rundir("/bin")
+	add_syslinks("user32", "shell32")
 	
 	--add minhook manually here since it doesnt seem to work when added with target
 	add_includedirs("libs/minhook/include")
